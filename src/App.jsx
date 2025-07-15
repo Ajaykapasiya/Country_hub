@@ -7,11 +7,13 @@ import { Country } from "./pages/Country";
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
 import { Home } from "./pages/Home";
+import { ErrorPage } from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement:<ErrorPage/>,
     children: [
       {
         path: "/",
