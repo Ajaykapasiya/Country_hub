@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const Headers = () => {
   return(
-  <Headers>
+  <header>
     <div className="container">
       <div className="grid navbar-grid">
         <div className="Logo">
@@ -20,6 +20,6 @@ export const Headers = () => {
         </nav>
       </div>
     </div>
-  </Headers>
+  </header>
   )
 };
