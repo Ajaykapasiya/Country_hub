@@ -1,5 +1,17 @@
+import { useEffect, useTransition } from "react";
+import { getCountryData } from "../api/postApi";
 
+export const Country = () => {
+  const { isPending, startTransition } = useTransition();
 
-export const Country = () =>{
-    return <h1>Country page</h1>
-}
+  useEffect(() => {
+    startTransition(async () => {
+      const res = await getCountryData();
+      console.log(res);
+    });
+  }, []);
+
+  if (isPending) return <h1>Loading...</h1>;
+
+  return <h1>Country page</h1>;
+};
