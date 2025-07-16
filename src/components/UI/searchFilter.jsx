@@ -36,13 +36,13 @@ export const SearchFilter = ({
         />
       </div>
 
-      <div>
+      {/* <div>
         <button onClick={() => sortCountries("asc")}>Asc</button>
       </div>
 
       <div>
         <button onClick={() => sortCountries("des")}>Desc</button>
-      </div>
+      </div> */}
 
       <div>
         <select
